@@ -682,3 +682,178 @@ button:hover{
     transition: 1s;
     transform: scale(1.1);
 }
+
+
+/* ===============================
+   RESPONSIVE OVERRIDES (≤ 992px)
+================================ */
+@media (max-width: 992px) {
+    /* Navbar Adjustment */
+    .topg {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .a2 {
+        padding: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .skl{
+        padding-bottom: 30px;
+    }
+    
+
+    /* FIX: Force vertical stack for skills to prevent overlap seen in your image */
+    .skill {
+        flex-direction: column !important;
+        height: auto !important;
+        align-items: center;
+        padding-top: 20px;
+        gap: 40px; /* Space between Technical and Professional blocks */
+    }
+
+    .d1, .d2 {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    /* Improve spacing for individual progress bars */
+    .d1 p, .d2 p {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    /* FIX: Tools & Technologies heading overlap */
+    .tt {
+        
+        height: auto !important;
+        padding: 40px 0;
+        
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+        height: auto !important;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    /* General Section Height Resets */
+    .mainsec, .c1, .pjt, .git, .abt {
+        height: auto !important;
+        padding-bottom: 50px;
+    }
+
+    /* Hero Section */
+    .container {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 42rem;
+    }
+
+    .b1 {
+        padding-left: 0;
+        margin-top: 100px; /* Adjusted for mobile navbar */
+    }
+
+    .b2 img {
+        margin-left: 0 !important;
+        margin-top: 30px;
+        position: static;
+    }
+
+    /* About Section */
+    .c1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .me, .details {
+        width: 90%;
+    }
+
+    .me img {
+        position: static;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .cc2 {
+        padding-left: 25px;
+        /* margin-top: 20px; */
+    }
+
+    /* Projects */
+    .project1, .project2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto !important;
+        margin-top: 0;
+    }
+
+    .e1, .e2, .e3, .e4, .e5, .e6 {
+        margin: 20px 0 !important;
+        width: 90% !important;
+    }
+    .e1 img{
+        width: 450px;
+    }
+
+    /* Contact Form */
+    .f {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f1, .f2 {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    textarea, 
+    .sms {
+        width: 100% !important;
+    }
+
+    .jj1 {
+        flex-direction: column;
+    }
+
+    /* Center the decorative underline for mobile */
+    .abt .ul, .skl .ul, .pjt .ul, .git .ul {
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+    }
+    
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .b1 h1 {
+        font-size: 24px;
+    }
+
+    .b2 img {
+        width: 200px;
+        height: 200px;
+    }
+    
+}
